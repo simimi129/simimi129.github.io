@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon filmes lapja | Legjobb Filmek</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script>
+        function style1() {
+            document.querySelector("link[href='style.css']").href = "style2.css"
+        }
+
+        function style2() {
+            document.querySelector("link[href='style2.css']").href = "style.css"
+        }
+    </script>
+</head>
+
+<body id="id1">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">Főoldal</a>
+                </li>
+                <li>
+                    <a href="mozizas.html" target="_blank">Mozizás története</a>
+                </li>
+                <li>
+                    <a class="aktual" href="topfilmek.html" target="_blank">Legjobb Filmek</a>
+                </li>
+                <li>
+                    <a href="felmeres.html" target="_blank">Felmérés</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <table class="toptabla">
+        <caption>
+            <details>
+                <summary>Top Filmek</summary>Itt láthatóak a szerintem legjobb filmek, amik számomra a legmeghatározóbbak. Egyéb toplisták és információk találhatóak az <a class="link" href="https://www.imdb.com/" target="_blank">IMDB</a>, <a class="link" href="https://www.rottentomatoes.com/"
+                    target="_blank">Rotten Tomatoes</a> vagy
+                <a class="link" href="https://www.metacritic.com/" target="_blank">Metacritic</a> oldalán. (Kattintásra az adott weblap megnyílik.)</details>
+        </caption>
+        <tr>
+            <th class="toptabla">Rangsor</th>
+            <th class="toptabla">Cím</th>
+        </tr>
+        <tr>
+            <td class="toptabla">1.</td>
+            <td class="toptabla">Mr.Nobody</td>
+        </tr>
+        <tr>
+            <td class="toptabla">2.</td>
+            <td class="toptabla">Mátrix</td>
+        </tr>
+        <tr>
+            <td class="toptabla">3.</td>
+            <td class="toptabla">Harcosok Klubja</td>
+        </tr>
+    </table>
+
+    <p class="videop">Érdekességként az első film (<a class="link" href="vidleiras.xhtml" target="_blank">A videó leírása</a>):</p>
+    <video width="400" controls poster="képkocka.png">
+            <source src="firstmov.mp4" type="video/mp4">
+        </video>
+
+    <footer class="lab">
+        <button type="button" onclick="style1()">Világos téma</button>
+        <button type="button" onclick="style2()">Sötét téma</button>
+        <p class="madeby">Készítette: Szabó Simon</p>
+    </footer>
+</body>
+
+</html>

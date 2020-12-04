@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon filmes lapja | Filmes Felmérés</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script>
+        function style1() {
+            document.querySelector("link[href='style.css']").href = "style2.css"
+        }
+
+        function style2() {
+            document.querySelector("link[href='style2.css']").href = "style.css"
+        }
+    </script>
+</head>
+
+<body id="id1">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">Főoldal</a>
+                </li>
+                <li>
+                    <a href="mozizas.html" target="_blank">Mozizás története</a>
+                </li>
+                <li>
+                    <a href="topfilmek.html" target="_blank">Legjobb Filmek</a>
+                </li>
+                <li>
+                    <a class="aktual" href="felmeres.html" target="_blank">Felmérés</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <form class="kerdoIv" action="mailto:simimi129@gmail.com" method="POST" id="urlap">
+        <fieldset>
+            <legend>Milyen filmeket kedvelsz?</legend>
+            <p class="feher"><strong>Kérlek töltsd ki ezt a filmezésről szoló űrlapot.</strong></p>
+            <label for="favmov"><strong>Egyik kedvenc filmed (ha nincs írj egy N betűt):</strong></label>
+            <input type="text" size="40" name="favmov" id="favmov" required maxlength="50">
+            <br>
+            <br>
+            <p class="feher"><strong>Szeretsz filmeket nézni?</strong></p>
+            <input type="radio" name="szeretefilmetnezni" id="igen" value="igen">
+            <label for="igen">Igen</label>
+            <input type="radio" name="szeretefilmetnezni" id="nem" value="nem">
+            <label for="nem">Nem</label>
+            <br>
+            <br>
+            <p class="feher"><strong>Hol fogyasztod legszívesebben a filmeket?</strong></p>
+            <input type="radio" name="holnezfilmet" id="mozi" value="mozi">
+            <label for="mozi">Mozi</label>
+            <input type="radio" name="holnezfilmet" id="otthon" value="otthon">
+            <label for="otthon">Otthon</label>
+            <input type="radio" name="holnezfilmet" id="sehol" value="sehol">
+            <label for="sehol">Sehol</label>
+            <br>
+            <br>
+            <p class="feher"><strong>Mely műfajokat szereted?</strong></p>
+            <input type="checkbox" name="mufaj" id="akcio" value="igen">
+            <label for="akcio">Akció</label>
+            <input type="checkbox" name="mufaj" id="thriller" value="igen">
+            <label for="thriller">Thriller</label>
+            <input type="checkbox" name="mufaj" id="drama" value="igen">
+            <label for="drama">Dráma</label>
+            <input type="checkbox" name="mufaj" id="doku" value="igen">
+            <label for="doku">Dokumentum</label>
+            <input type="checkbox" name="mufaj" id="vig" value="igen">
+            <label for="vig">Vígjáték</label>
+            <input type="checkbox" name="mufaj" id="horror" value="igen">
+            <label for="horror">Horror</label>
+            <br>
+            <br>
+            <label for="velemeny"><strong>Miért szeretsz filmezni?:</strong></label>
+            <br>
+            <textarea cols="50" rows="10" name="velemeny" id="velemeny" placeholder="Ide írj:)" required maxlength="500"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Elküld">
+            <input type="reset" value="Alaphelyzetbe állít">
+        </fieldset>
+    </form>
+
+    <footer class="lab">
+        <button type="button" onclick="style1()">Világos téma</button>
+        <button type="button" onclick="style2()">Sötét téma</button>
+        <p class="madeby">Készítette: Szabó Simon</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon filmes lapja | Mozizás története</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script>
+        function style1() {
+            document.querySelector("link[href='style.css']").href = "style2.css"
+        }
+
+        function style2() {
+            document.querySelector("link[href='style2.css']").href = "style.css"
+        }
+    </script>
+</head>
+
+<body id="id1">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">Főoldal</a>
+                </li>
+                <li>
+                    <a class="aktual" href="mozizas.html" target="_blank">Mozizás története</a>
+                </li>
+                <li>
+                    <a href="topfilmek.html" target="_blank">Legjobb Filmek</a>
+                </li>
+                <li>
+                    <a href="felmeres.html" target="_blank">Felmérés</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <h1 class="mozizas">A mozizás rövid története</h1>
+        <table class="tabla">
+            <tr>
+                <td>
+                    <figure>
+                        <img class="imgmozi1" src="mozi1.jpg" alt="Egy kép egy színésznőről és egy színészről akik egy padon ülnek és teáznak, közöttük egy kutya is ül.">
+                    </figure>
+                </td>
+                <td>
+                    <section>
+                        <h2>Kezdetek</h2>
+                        <p>
+                            A film története 1880-ban veszi kezdetét az első kamerák feltalálásával, ezek nagyjából egy tucat képkockát rögzítettek másodpercenként. A legelső fennmaradt film, mely ilyen kamerával készült az 1888-as Roundhayi kerti jelenet, melyből két másodpercnyi
+                            anyag maradt fenn, eredetileg két perces lehetett. 1895-ben a Lumière fivérek feltalálták a kinematográfot, mely alkalmas volt mozgókép felvételére illetve vetítésére. Találmányukat még ebben az évben bemutatták a közönségnek,
+                            amikor decemberben levetítették saját filmjeiket Párizsban. Ezt az időpontot tartják a mozi születésének. A kinematográfot a Pathé fivérek kezdték el sorozatban gyártani a Pathé Fréres cég keretein belül. Másik cégük a Pathé
+                            Cinema pedig filmek gyártására lett alapítva. Mindkét vállalkozásban sikereket értek el, egyetlen komoly vetélytársuk a Gaumont volt, melyet Léon Gaumont alapított. A cég 1910-ben átvette a vezető szerepet a Pathé testvérektől.
+                            Ám 1920-ra az amerikai stúdiók elkezdték filmjeiket külföldön is forgalmazni, így a Hollywood-i filmkészítés vált a követendő példává. 1922-ben három német mérnök – Hans Vogt, Joseph Massolle és Benedict Engel – levetítette
+                            első hangosfilmjét Berlinben. Az általuk feltalált új eljárást használták. A Warner Brothers A dzsesszénekes című 1927-es munkájával vette kezdetét a hangosfilm korszaka.
+
+                        </p>
+                    </section>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <section>
+                        <h2>Hangosfilmek korszaka</h2>
+                        <p>
+                            1930-ban bemutatták Budapesten a Kék Bálványt, az első magyarországi hangosfilmet. Ezt követi a Hyppolit, a lakáj. Az 1930-as években elterjedt a Movietone eljárás. A keverésnek köszönhetően hamarosan a film összes hangja egyetlen hangsávba került. 1940-ben
+                            Walt Disney Fantázia című rajzfilmjében használták először a sztereó hangot. A hetvenes években fejlesztette a ki a Dolby laboratórium zajszűrő rendszerét. Majd a 80-as években megjelent a digitális hangrögzítés. 1907-ben a
+                            Lumière fivérek bemutatták az autokróm eljárást. 1909-ben a londoni Palace varietében levetítették az első színes hatású filmet. 1917-ben a tényleges színes film bemutatkozására az Amerikai Egyesült Államokban a technicolor
+                            eljárás adott lehetőséget. 1936-ban a szubtraktív színkeverés fejlettebb eljárást alkalmazták, ami az Agfacolor néven vált ismerté a színes filmek körében. A német gyártót az Eastman Kodak követte Kodakchrome néven. A Technicolor
+                            vállalat 1930-ra dolgozta ki a három alapszín, illetve a keverésükkel létrehozott többi színnel készíthető filmek gyártási lehetőségét. Walt Disney fejlesztette ki az eljárást. A Hiúság vására című film 1935-ben készült, de
+                            a színes film valódi premierjére 1937-ben került sor Disney Hófehérke és a hét törpe című klasszikusának bemutatójával.
+
+                        </p>
+                    </section>
+                </td>
+                <td>
+                    <figure>
+                        <img class="imgmozi2" src="mozi2.jpg" alt="Egy kép a Hófehérke című mese egyik jelenetéről: Hófehérke felébred a hét törpe társaságában.">
+                    </figure>
+                </td>
+            </tr>
+        </table>
+    </article>
+
+    <footer class="lab">
+        <button type="button" onclick="style1()">Világos téma</button>
+        <button type="button" onclick="style2()">Sötét téma</button>
+        <p class="madeby">Készítette: Szabó Simon</p>
+    </footer>
+</body>
+
+</html>

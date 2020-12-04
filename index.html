@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon filmes lapja | Főoldal</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script>
+        function style1() {
+            document.querySelector("link[href='style.css']").href = "style2.css"
+        }
+
+        function style2() {
+            document.querySelector("link[href='style2.css']").href = "style.css"
+        }
+    </script>
+</head>
+
+<body id="id1">
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a class="aktual" href="index.html" target="_blank">Főoldal</a>
+                </li>
+                <li>
+                    <a href="mozizas.html" target="_blank">Mozizás története</a>
+                </li>
+                <li>
+                    <a href="topfilmek.html" target="_blank">Legjobb Filmek</a>
+                </li>
+                <li>
+                    <a href="felmeres.html" target="_blank">Felmérés</a>
+                </li>
+            </ul>
+        </nav>
+        <figure class="fig1">
+            <img class="imgfo1" src="fooldal1uj.jpg" alt="Egy kép egy mozi piros székeiről szemből.">
+        </figure>
+    </header>
+
+    <div class="row">
+        <div class="columnLeft">
+            <article class="foOldal">
+                <h1>A filmről általánosan</h1>
+                <p>A film, magyarul mozgókép, képekből álló sorozat, amely a vásznon olyan gyorsan változik, hogy azt az illúziót kelti, mintha mozogna. A filmet egyszerre tekintjük művészetnek és iparágnak. Lehet készíteni úgy, hogy valódi jeleneteket filmezünk
+                    le egy kamerával, úgy, hogy rajzokat fotózunk le, így tradicionális rajzfilmeket készítve, úgy, hogy CGI-t, vagyis a számítógép által kreált animációt használunk, vagy úgy, hogy ezeket a technikákat egyaránt használjuk.</p>
+                <h2>Mozik, színházak</h2>
+                <p>A mozi, vagy filmszínház azt a helyet jelöli, amelyet abból a célból hoznak létre, hogy benne filmeket vetítsenek. Angol megfelelője, a „cinema” (ejtsd: szinema) azonban már az iparágat is, illetve a filmművészetet is jelenti. Modern definíciója
+                    szerint olyan művészeti ág, melynek lényege élmények szimulálása, történetek, ötletek, érzéseket vagy atmoszféra közvetítése mozgóképpel, illetve más stimulációkkal, például zenével.</p>
+                <h2>A kúltúrában</h2>
+                <p>film kulturális ereklye, amely rengeteg kultúrában jelen van. Reflektál a kultúrára, mi több, hat arra. A film az egyik legfontosabb művészeti forma, modern szórakoztatási eszköz és remek módszer a nevelésre, valamint propagandák sulykolására.
+                    A film vizualitása hatalmas erő a kommunikációban. Egyes filmek világhírűek lettek, hála a feliratozásnak, illetve a szinkronizálásnak, mely módszerekkel más nyelvekre lehet fordítani a szöveget. Szokás a filmművészetre mint a hetedik
+                    művészeti ágra hivatkozni. Radványi Géza filmrendező egy interjúban úgy fogalmazott, hogy az objektíven keresztül „objektíven kell nézni a világot, és felnagyítani az ember és ember, ember és világ közötti összefüggéseket – a láthatatlan
+                    összefüggéseket is”.
+                </p>
+                <aside>
+                    A filmeket szerintem azért szeretünk nézni mert azonosulni tudunk a benne lévő karakterekkel, történetekkel, érésekkel, érzelmekkel valamilyen szinten.
+                </aside>
+            </article>
+        </div>
+        <div class="columnRight">
+            <a href="fooldal2.jpg" target="_blank"><img class="columnImg" src="fooldal2kicsi.jpg" alt="Egy kép egy adag pattogatott kukoricáról."></a>
+            <a href="fooldal3.jpg" target="_blank"><img class="columnImg2" src="fooldal3kicsi.jpg" alt="Egy kép egy emberről aki a moziban régi típusú vetítőgépet kezel a vetítőszobában."></a>
+        </div>
+    </div>
+
+    <footer class="lab">
+        <button type="button" onclick="style1()">Világos téma</button>
+        <button type="button" onclick="style2()">Sötét téma</button>
+        <p class="madeby">Készítette: Szabó Simon</p>
+    </footer>
+
+</body>
+
+</html>
